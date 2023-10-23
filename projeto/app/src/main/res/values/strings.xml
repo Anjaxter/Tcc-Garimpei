@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Garimpei</string>
+    <string name="hint_user">Digite um Usuário</string>
+    <string name="hint_pass">Digite uma Senha</string>
+    <string name="btn_login">login</string>
+    <string name="forgot_pass">Não tem uma conta?</string>
+    <string name="forgot_pass2">Criar conta</string>
+    <string name="login_susses">Login efetuado com sucesso</string>
+    <string name="login_erro">Usuário e/ou Senha errada</string>
+
+    <!-- String Cadastro  -->
+    <string name="have_acount">Já tem uma conta?</string>
+    <string name="have_acount2">Login</string>
+    <string name="hint_email"> Digite um Email</string>
+    <string name="cad_btn_cad">Cadastrar</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="title_lista_brecho">Lista de Brechos</string>
+    <string name="cadBrecho_title">Cadastrar Brecho</string>
+    <string name="cadBrecho_editText_title">Ex: Brecho da dona Marcia</string>
+    <string name="cadBrecho_editText_descricao">Ex: Roupas novas e usadas, descontos incriveis</string>
+    <string name="cadBrecho_editText_horariofun">Ex: 8:00 as 18:00</string>
+    <string name="cadBrecho_buttonCad">Cadastrar</string>
+    <string name="cadBrecho_tv_title">Titulo do brecho*</string>
+    <string name="cadBrecho_tv_descricao">Descrição*</string>
+    <string name="cadBrecho_tv_telefone">Telefone*</string>
+    <string name="cadBrecho_editText_telefone">Ex: 11989786756</string>
+    <string name="cadBrecho_tv_horarioFun">Horario de Funcionamento*</string>
+    <string name="menu_brecho">Lista de Brechós</string>
+    <string name="menu_cadBrecho">Cadastrar Brechó</string>
+    <string name="cadBrecho_tv_endereço">Endereço*</string>
+    <string name="cadBrecho_editText_endereco">Ex: Rua das Garças</string>
+    <string name="nav_header_title_garimp">Garimpei</string>
+    <string name="cadBrecho_editText_As">Às</string>
+    <string name="cadBrecho_tv_das">Das</string>
+    <string name="cadBrecho_editText_endereco_numero">Ex: 254</string>
+    <string name="cadBrecho_tv_endereço_numero">Numero*</string>
+    <string name="nav_perfil">Perfil</string>
+    <string name="perfil_label">Perfil</string>
+    <string name="Meus_Brecho">Meus Brechós</string>
+</resources>

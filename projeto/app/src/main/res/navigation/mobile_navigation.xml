@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="br.com.TccAndroid.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="br.com.TccAndroid.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="br.com.TccAndroid.ui.cadbrecho.CadBrechoFragment"
+        android:label="@string/menu_cadBrecho"
+        tools:layout="@layout/fragment_cad_brecho" />
+    <fragment
+        android:id="@+id/navigation_listaBrecho"
+        android:name="br.com.TccAndroid.dao.ListaBrechoFragment"
+        android:label="@string/title_lista_brecho"
+        tools:layout="@layout/fragment_lista_brecho_list" />
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="br.com.TccAndroid.ui.perfil.PerfilFragment"
+        android:label="@string/perfil_label"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/meusBrechos"
+        android:name="br.com.TccAndroid.ui.MeusBrechos.MeusBrechosFragment"
+        android:label="Meus Brecho"
+        tools:layout="@layout/fragment_meus_brechos_list" />
+
+</navigation>

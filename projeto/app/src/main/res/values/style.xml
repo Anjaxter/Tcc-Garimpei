@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Estilo da barra de status -->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="img_logo">
+        <item name="android:src">@drawable/logo</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">50dp</item>
+    </style>
+
+    <style name="edit_text_user">
+        <item name="android:hint">@string/hint_user_login</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:drawableRight">@drawable/ic_editext_user</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="edit_text_pass">
+        <item name="android:hint">@string/hint_pass_login</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:drawableRight">@drawable/ic_lockpass</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:maxLength">15</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="btn_log">
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:hint">@string/btn_login</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    
+    <style name="forgotpass1">
+        <item name="android:layout_marginStart">100dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="forgotpass2">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColorHint">@color/blue_link</item>
+    </style>
+
+    <style name="cadBrecho_editText">
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="cadBrecho_tv">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <string name="hint_pass_login">Digite sua Senha</string>
+    <string name="hint_user_login">Digite seu Usuário</string>
+</resources>

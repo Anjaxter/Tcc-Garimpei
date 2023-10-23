@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cadbrecho.CadBrechoFragment">
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/cadBrecho_title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:text="@string/cadBrecho_title"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="35sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/cadBrecho_cardBrecho"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitXY"
+                android:background="@color/cadBrecho_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/cadBrecho_img_upload"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_file_upload"
+                app:layout_constraintStart_toStartOf="@id/cadBrecho_cardBrecho"
+                app:layout_constraintEnd_toEndOf="@id/cadBrecho_cardBrecho"
+                app:layout_constraintTop_toTopOf="@id/cadBrecho_cardBrecho"
+                app:layout_constraintBottom_toBottomOf="@id/cadBrecho_cardBrecho"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cadBrecho_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cadBrecho_tv_title"
+                style="@style/cadBrecho_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_cardBrecho"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cadBrecho_editText_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cadBrecho_editText_title"
+                style="@style/cadBrecho_editText"
+                android:maxLength="75"
+                android:inputType="text"
+                android:background="@drawable/bg_edittext_cadbrecho"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cadBrecho_tv_title"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cadBrecho_tv_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cadBrecho_tv_descricao"
+                style="@style/cadBrecho_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_editText_title"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cadBrecho_editText_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cadBrecho_editText_descricao"
+                style="@style/cadBrecho_editText"
+                android:maxLength="225"
+                android:minLines="2"
+                android:background="@drawable/bg_edittext_cadbrecho"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_tv_descricao"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cadBrecho_tv_telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cadBrecho_tv_telefone"
+                style="@style/cadBrecho_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_editText_descricao"
+                />
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/cadBrecho_editText_telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/cadBrecho_editText_telefone"
+                android:padding="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:inputType="number"
+                app:mask="(__) _____-____"
+                app:maskCharacter="_"
+                app:maskStyle="completable"
+                android:background="@drawable/bg_edittext_cadbrecho"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_tv_telefone"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cadBrecho_tv_horarioFun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cadBrecho_tv_horarioFun"
+                style="@style/cadBrecho_tv"
+                app:layout_constraintStart_toEndOf="@id/cadBrecho_editText_telefone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_editText_descricao"
+                />
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/cadBrecho_tv_das"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/cadBrecho_tv_das"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"-->
+<!--                android:layout_marginStart="6dp"-->
+<!--                app:layout_constraintStart_toEndOf="@id/cadBrecho_editText_telefone"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/cadBrecho_tv_endereco"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/cadBrecho_tv_horarioFun" />-->
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/cadBrecho_editText_HorarioFun_das"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                style="@style/cadBrecho_editText"
+                android:hint="18:00"
+                android:background="@drawable/bg_edittext_cadbrecho"
+                android:inputType="number"
+                android:layout_marginStart="40dp"
+                app:mask="__:__"
+                app:maskCharacter="_"
+                app:maskStyle="completable"
+                app:layout_constraintStart_toEndOf="@id/cadBrecho_editText_telefone"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_tv_horarioFun" />
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/cadBrecho_editText_HorarioFun_das"-->
+<!--                style="@style/cadBrecho_editText"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/bg_edittext_cadbrecho"-->
+<!--                android:hint="18:00"-->
+<!--                android:layout_marginStart="50dp"-->
+<!--                android:maxLength="4"-->
+<!--                app:layout_constraintStart_toEndOf="@id/cadBrecho_editText_telefone"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/cadBrecho_tv_horarioFun" />-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cadBrecho_editText_As"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/cadBrecho_editText_HorarioFun_das"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_tv_horarioFun"
+                app:layout_constraintEnd_toStartOf="@id/cadBrecho_editText_HoraioFun_as"
+                app:layout_constraintBottom_toTopOf="@id/cadBrecho_tv_endereco"
+                />
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/cadBrecho_editText_HoraioFun_as"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                style="@style/cadBrecho_editText"
+                android:hint="20:00"
+                android:background="@drawable/bg_edittext_cadbrecho"
+                android:inputType="number"
+                android:layout_marginStart="18dp"
+                app:mask="__:__"
+                app:maskCharacter="_"
+                app:maskStyle="completable"
+                app:layout_constraintStart_toEndOf="@id/cadBrecho_editText_HorarioFun_das"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_tv_horarioFun"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/cadBrecho_editText_HoraioFun_as"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                style="@style/cadBrecho_editText"-->
+<!--                android:hint="20:00"-->
+<!--                android:inputType="time"-->
+<!--                android:maxLength="4"-->
+<!--                android:background="@drawable/bg_edittext_cadbrecho"-->
+<!--                app:layout_constraintStart_toEndOf="@id/cadBrecho_editText_HorarioFun_das"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/cadBrecho_tv_horarioFun"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                />-->
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cadBrecho_tv_endereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cadBrecho_tv_endereço"
+                style="@style/cadBrecho_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_editText_telefone"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cadBrecho_editText_endereco"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/cadBrecho_editText_endereco"
+                style="@style/cadBrecho_editText"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_edittext_cadbrecho"
+                app:layout_constraintEnd_toStartOf="@id/cadBrecho_editText_endereco_numero"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_tv_endereco"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cadBrecho_tv_endereco_numero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cadBrecho_tv_endereço_numero"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_editText_telefone"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/cadBrecho_editText_endereco_numero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/cadBrecho_editText_endereco_numero"
+                style="@style/cadBrecho_editText"
+                android:maxLength="5"
+                android:background="@drawable/bg_edittext_cadbrecho"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@id/cadBrecho_editText_endereco"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_tv_endereco"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cadBrecho_buttonCad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cadBrecho_buttonCad"
+                android:background="@color/end_gradient"
+                android:layout_marginTop="20dp"
+                android:padding="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadBrecho_editText_endereco"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

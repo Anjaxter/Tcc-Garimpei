@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="cad_img_logo">
+        <item name="android:src">@drawable/logo</item>
+    </style>
+
+    <style name="cad_edit_text_user">
+        <item name="android:hint">@string/hint_user</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:drawableRight">@drawable/ic_editext_user</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="cad_edit_text_pass">
+        <item name="android:hint">@string/hint_pass</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:drawableRight">@drawable/ic_lockpass</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:maxLength">15</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="cad_edit_text_email">
+        <item name="android:hint">@string/hint_email</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:drawableRight">@drawable/ic_email</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:maxLength">75</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="cad_btn_log">
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:hint">@string/btn_login</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="cad_havelogin1">
+        <item name="android:layout_marginStart">130dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="cad_havelogin2">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColorHint">@color/blue_link</item>
+    </style>
+
+</resources>

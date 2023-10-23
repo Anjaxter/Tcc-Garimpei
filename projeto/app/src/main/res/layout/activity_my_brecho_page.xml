@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyBrechoPage.MyBrechoPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/DeleteMybrecho"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_delete_trash"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ButtonEditar_Mybrecho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar"
+                android:drawableRight="@drawable/ic_create_pencil"
+                android:background="@drawable/bg_edit_mybrecho"
+                android:padding="12dp"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <ImageView
+                android:id="@+id/imageView_MyBrechoPage"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/img_1"
+                android:scaleType="fitXY"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ButtonEditar_Mybrecho"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/TextView_Title_MyBrechoPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:enabled="false"
+                android:maxLength="50"
+                android:text="Brecho dona maria"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView_MyBrechoPage" />
+
+            <TextView
+                android:id="@+id/Label_Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrição:"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TextView_Title_MyBrechoPage" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/TextView_Descricao_MyBrechoPage"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Roupas para homens e mulheres crianças e adultos"
+                android:maxLength="225"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:enabled="false"
+                app:layout_constraintTop_toBottomOf="@id/Label_Desc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/TextView_Horario_MyBrechoPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Horario de Funcionamento  Das:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/TextView_Descricao_MyBrechoPage"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/TextView_Horario_Das_MyBrechoPage"
+                android:layout_width="55dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:text="8:00"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="number"
+                app:mask="__:__"
+                app:maskCharacter="_"
+                app:maskStyle="completable"
+                android:enabled="false"
+                app:layout_constraintTop_toBottomOf="@id/TextView_Descricao_MyBrechoPage"
+                app:layout_constraintStart_toEndOf="@id/TextView_Horario_MyBrechoPage"
+                />
+
+            <TextView
+                android:id="@+id/TextView_Horario__MyBrechoPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:text="as"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/TextView_Descricao_MyBrechoPage"
+                app:layout_constraintStart_toEndOf="@id/TextView_Horario_Das_MyBrechoPage"
+                />
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/TextView_Horario_As_MyBrechoPage"
+                android:layout_width="55dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:text="18:00"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="number"
+                app:mask="__:__"
+                app:maskCharacter="_"
+                app:maskStyle="completable"
+                android:enabled="false"
+                app:layout_constraintTop_toBottomOf="@id/TextView_Descricao_MyBrechoPage"
+                app:layout_constraintStart_toEndOf="@id/TextView_Horario__MyBrechoPage"
+                />
+
+            <TextView
+                android:id="@+id/Label_End"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endereço:"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TextView_Horario_MyBrechoPage" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/TextView_Endereco_MyBrechoPage"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:text="Rua das Garças,"
+                android:maxLength="225"
+                android:textSize="18sp"
+                android:enabled="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Label_End" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/TextView_Endereco_Numero_MyBrechoPage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+                android:maxLength="4"
+                android:text="254"
+                android:textSize="18sp"
+                android:enabled="false"
+                app:layout_constraintTop_toBottomOf="@id/Label_End"
+                app:layout_constraintStart_toEndOf="@id/TextView_Endereco_MyBrechoPage"
+                />
+
+            <TextView
+                android:id="@+id/Label_Telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone:"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TextView_Endereco_MyBrechoPage" />
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/TextView_Telefone_MyBrechoPage"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+                android:maxLength="15"
+                android:text="(11)76487265"
+                android:inputType="number"
+                app:mask="(__) _____-____"
+                app:maskCharacter="_"
+                app:maskStyle="completable"
+                android:textSize="18sp"
+                android:enabled="false"
+                app:layout_constraintTop_toBottomOf="@id/Label_Telefone"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_save_MyBrecho"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:visibility="gone"
+                android:background="@drawable/bg_edit_mybrecho"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TextView_Telefone_MyBrechoPage"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

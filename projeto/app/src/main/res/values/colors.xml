@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#3B1F07</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_link">#0000FF</color>
+
+    <color name="primary_color_theme">#ffbb6e</color>
+    <color name="start_gradient">#ffbb6e</color>
+    <color name="end_gradient">#ffe791</color>
+
+    //home
+
+    <color name="home_topBar">#f6c975</color>
+
+    <color name="cadBrecho_grey">#808080</color>
+
+</resources>
